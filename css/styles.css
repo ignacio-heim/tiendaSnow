@@ -1,5 +1,4 @@
-html, body {
-    width: 100%;
+html, body { 
     margin: 0;
     padding: 0;
     background-color: rgb(206, 206, 206);
@@ -10,59 +9,59 @@ html, body {
     color: white;
 }
 
-header {
+/* Header */
+
+.bc-blue {
     background-color: rgb(33, 33, 136);
-    height: 40px;
 }
 
 .enlaces-header { 
-    height: 20px; 
-    width: 100%;
-    margin-top: 10px;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .enlaces-header .envios-cuotas {
     height: 20px;
-    width: 40%;
-    display: inline-block;
-    text-align: center;
+    margin: auto;
+        
 }
 
-.envios-cuotas .texto-envios-cuotas {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    text-align: center;
+@media only screen and (min-width: 769px) {
+    .enlaces-header {
+        flex-direction: row;
+    }
 }
+
+/*  Nav */
 
 .contendor-nav {
     background-color:rgb(175, 174, 174);
-    height: 80px;
-    width: 100%;    
-    
+    display: flex;    
+    flex-direction: column;
 
 }
-.contenedor-img, .enlaces-sucursales {
-    display: inline-block;
-    vertical-align: middle;
-    
+.contendor-nav .item-nav {
+    margin: auto;  
+}
+
+@media only screen and (min-width: 769px) {
+    .contendor-nav {
+        flex-direction: row;
+    }
 }
 
 .contenedor-img a {
-    color: black;
-    display: inline-block;
-    
-}
-
-.enlaces-sucursales a {
-    display: inline-block;
-    margin-left: 750px;
+    color: black;    
 }
 
 .hw-img-home img{
-    height: 60px;
+    height: 70px;
     width: 140px;
+}
+
+.enlaces-sucursales {
+    height: 30px;
 }
 
 .font-size {
@@ -70,12 +69,14 @@ header {
 }
 
 .font-size-logo {
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .enlaces-text-decoration-none {
     text-decoration: none;
 }
+
+/*Img central*/
 
 .hw-imagen-central {
     width: 100%;
@@ -91,76 +92,82 @@ header {
     border-bottom: 1px solid black;
 }
 
+/*Lista productos*/
+
 .contedor-productos {
-    width: 100%;
-    height: 850px;
-    display: inline-block;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.productos-fila {
-    margin-top: 10px;
-    height: 400px;
-    width: 100%;
+
+.contedor-productos .producto {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    border-radius: 15px;    
+}
+
+@media only screen and (min-width: 768px) {
+    .contedor-productos .producto {
+        width: 40%;
+    }
+}
+
+.producto .element{
     display: flex;
     justify-content: center;
 }
 
-.producto {
-    background-color: rgb(255, 255, 255);
-    display: inline-block;
-    height: 350px;
-    width: 30%;
-    border-radius: 15px;
-    margin-bottom: 0px;
-    margin-left: 40px;
+.element {
+    text-align: center;
 }
 
 
 .hw-imagen-producto img {
-    width: 150px;
-    height: 250px;    
+    width: 50%;
+    height: 200px;    
 }
 
-.center {
-    display: flex;
-    justify-content: center;
+
+
+.bc-green {
+    background-color: green;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:  10px;
+}
+
+.color-font-white {
+    color: white;
 }
 
 .uppercase {
     text-transform: uppercase;
 }
 
-.enlace-comprar-verde {
-    background-color: green;
-    margin-left: 140px;
-    margin-right: 140px;
-    border-radius: 10px;
-    color: white;
+.bc-grey {
+    background-color: gray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:  10px;
 }
 
 .nombre-producto {
-    font-size: 20px;
-    margin-top: 1px;
-    margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .no-margin {
     margin: 0;
 }
 
-.sin-stock-gris {
-    background-color: gray;
-    margin-left: 140px;
-    margin-right: 140px;
-    border-radius: 10px;
-    color: white;
-}
-
 .precio-tachado-sin-stock {
     text-decoration: line-through 2px solid black;
     color: gray;
 }
+
+/*Footer*/
 
 footer {
     background-color:rgb(33, 33, 136);
@@ -177,6 +184,8 @@ footer {
     margin-right: 20px;
 }
 
+
+/*Vista Producto*/
 .contedor-producto {
     height: 950px;
     width: 100%;
