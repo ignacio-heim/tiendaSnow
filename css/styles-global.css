@@ -1,0 +1,122 @@
+html, body { 
+    margin: 0;
+    padding: 0;
+    background-color: rgb(206, 206, 206);
+}
+
+.font-white {
+    color: white;
+}
+
+/* Header */
+
+.bc-blue {
+    background-color: rgb(33, 33, 136);
+}
+
+.enlaces-header { 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.enlaces-header .envios-cuotas {
+    height: 20px;
+    margin: auto;
+        
+}
+
+@media only screen and (min-width: 769px) {
+    .enlaces-header {
+        flex-direction: row;
+    }
+}
+
+/*  Nav */
+
+.contendor-nav {
+    background-color:rgb(175, 174, 174);
+    display: flex;    
+    flex-direction: column;
+
+
+}
+.contendor-nav .item-nav {
+    margin: auto;  
+
+}
+
+@media only screen and (min-width: 769px) {
+    .contendor-nav {
+        flex-direction: row;
+    }
+
+    .container-foot {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.contenedor-img {
+    align-items: center;
+}
+
+.contenedor-img a {
+    color: black;   
+    align-content: center; 
+}
+
+.hw-img-home img{
+    height: 70px;
+    width: 140px;
+}
+
+.enlaces-sucursales {
+    height: 30px;
+}
+
+.font-size {
+    font-size: 20px;
+}
+
+.font-size-logo {
+    font-size: 30px;
+}
+
+.enlaces-text-decoration-none {
+    text-decoration: none;
+}
+
+.main-section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main-section .title {
+    border-bottom: 1px solid black;
+}
+
+/*Footer*/
+
+.bg-blue {
+    background-color:rgb(33, 33, 136);
+    width: 100%;    
+}
+
+
+.margin-left {
+    margin-left: 20px;
+}
+
+.margin-right {
+    margin-right: 20px;
+}
+
+
+.margin-top {
+    margin-top: 20px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}

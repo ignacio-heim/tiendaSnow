@@ -1,0 +1,89 @@
+.margin {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.seccion-pago {
+    margin-top: 25px;
+    background-color: rgb(240, 240, 240);
+}
+
+.contendor-form {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .container-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .width-row {
+        width: 50%;
+    }
+
+    .container-datos-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .seccion-max-width {
+        width: 80%;
+    }
+
+    .position-sticky {
+        top: 30px;
+        position: sticky;
+        
+    }
+}
+
+.item-form{
+    width: 90%;
+    height: 30px;
+    margin: 5px;
+}
+
+.button-enviar {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.button-enviar:hover {
+    background-color: rgb(5, 204, 5);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.hw-imagen-producto {
+    width: 50%;
+    height: 250px;
+}
+
+.font-bold-size {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text-small {
+    font-size: small;
+}
+
+.font-decoration {
+    font-weight: bolder;
+    font-size: x-large;
+    color: rgb(4, 4, 128);
+    background-color: rgba(150, 129, 243, 0.836);
+    border-radius: 10px;
+}
+
+.border {
+    border-radius: 10px;
+}

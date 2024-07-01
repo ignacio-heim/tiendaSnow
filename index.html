@@ -4,30 +4,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Tienda Condor</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-global.css">
+    <link rel="stylesheet" href="css/styles-imgs.css">
+    <link rel="stylesheet" href="css/style-listaproductos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="bc-blue">
         <div class="enlaces-header font-white">
             <p class="envios-cuotas uppercase">Envíos gratis a todo el país</p>            
-            <p class="envios-cuotas uppercase">3 cuotas sin interés con con todas las tarjetas</p>            
+            <p class="envios-cuotas uppercase">3 cuotas sin interés con tarjetas de crédito</p>         
         </div>
     </header>
-
 
     <nav>
         <div class="contendor-nav">
             <div class="item-nav contenedor-img hw-img-home font-size-logo">
-                <a href="index.html" class="enlaces-text-decoration-none"><img src="img/condor2.png" alt="home">Tienda Condor</a>
+                <a href="index.html">
+                    <img src="img/condor2.png" alt="home" alt="Icono de inicio">                
+                </a>
+            </div>
+            <div class="item-nav contenedor-img hw-img-home font-size-logo">
+                <a class="enlaces-text-decoration-none" href="index.html">Tienda Condor</a>
             </div>
             <div class="item-nav enlaces-sucursales uppercase font-size">
                 <a class="enlaces-text-decoration-none" href="sucursales.html">Sucursales</a>
             </div>
+            <div class="item-nav enlaces-sucursales uppercase font-size">
+                <a class="enlaces-text-decoration-none" href="empresa.html">Empresa</a>
+            </div>
+            <div class="item-nav enlaces-sucursales uppercase font-size">
+                <a class="enlaces-text-decoration-none" href="contacto.html">Contacto</a>
+            </div>
+
         </div>
     </nav>
 
     <div>
-        <img src="img/img1.jpg" alt="Imagen central" class="hw-imagen-central">
+        <img src="img/foto.png" alt="Imagen central de inicio" class="hw-imagen-central">
     </div>
 
     <div class="main-section">
@@ -42,13 +58,13 @@
                 <h5 class="nombre-producto uppercase">Tabla Nitro Team</h5>
             </div>
             <div class="element hw-imagen-producto">
-                <img src="img/producto1.png" alt="tabla-snowboard">
+                <img src="img/producto1.png" alt="Tablad de Snowboard">
             </div>
             <div class="element nombre-producto uppercase">
                 <p class="no-margin">$700</p>
             </div>
             <div class="element bc-green">
-                <a href="producto.html" target="_blank" class="uppercase color-font-white enlaces-text-decoration-none">Comprar</a>
+                <a href="producto.html" class="uppercase color-font-white enlaces-text-decoration-none">Comprar</a>
             </div>
         </div>
         <div class="producto">
@@ -56,7 +72,7 @@
                 <h5 class="nombre-producto uppercase">Campera Ansilta</h5>
             </div>
             <div class="element hw-imagen-producto">
-                <img src="img/producto2.png" alt="Campera-Ansilta">
+                <img src="img/producto2.png" alt="Campera Ansilta">
             </div>
             <div class="element nombre-producto uppercase">
                 <p class="no-margin precio-tachado-sin-stock">$600</p>
@@ -70,7 +86,7 @@
                 <h5 class="nombre-producto uppercase">Botas Deluxe ID</h5>
             </div>
             <div class="element hw-imagen-producto">
-                <img src="img/producto3.png" alt="tabla-snowboard">
+                <img src="img/producto3.png" alt="Botas Deluxe ID">
             </div>
             <div class="element nombre-producto uppercase">
                 <p class="no-margin precio-tachado-sin-stock">$400</p>
@@ -82,7 +98,7 @@
     
         <div class="producto">
             <div class="element">
-                <h5 class="nombre-producto uppercase">Guantes DC Franchise</h5>
+                <h5 class="nombre-producto uppercase">Guantes DC Franchise Dry</h5>
             </div>
             <div class="element hw-imagen-producto">
                 <img src="img/producto4.png" alt="Guantes DC Franchise">
@@ -97,7 +113,7 @@
         </div>    
         <div class="producto">
             <div class="element">
-                <h5 class="nombre-producto uppercase">Tablas Ski Fischer</h5>
+                <h5 class="nombre-producto uppercase">Tablas Ski Fischer Pro</h5>
             </div>
             <div class="element hw-imagen-producto">
                 <img src="img/producto5.png" alt="Tablas-Ski-Fischer">
@@ -113,10 +129,10 @@
         </div>
         <div class="producto">                    
             <div class="element">
-                <h5 class="nombre-producto uppercase">Bastones Ski One Way</h5>
+                <h5 class="nombre-producto uppercase">Bastones Ski One Way Pro</h5>
             </div>
             <div class="element hw-imagen-producto">
-                <img src="img/producto6.png" alt="bastones-Ski-One-Way">
+                <img src="img/producto6.png" alt="Bastones Ski One Way">
             </div>
             <div class="element nombre-producto uppercase">
                 <p class="no-margin precio-tachado-sin-stock">$60</p>
@@ -128,9 +144,25 @@
         </div>         
     </section>
 
-    <footer>
-        <div class="inline-block margin-top margin-left font-white">
-            <p>© 2024 Tienda Condor. Todos los derechos reservados.</p>
+    <footer class="bg-blue">
+        <div class="container-foot margin-top margin-left font-white">
+            <div>
+                <p>© 2024 Tienda Condor. Todos los derechos reservados.</p>
+            </div>
+            <div>
+                <ul>
+                    <h3>Links de interes</h3>
+                </ul>
+                <ul>
+                    <a href="sucursales.html" class="font-white enlaces-text-decoration-none">Sucursales</a>
+                </ul>
+                <ul>
+                    <a href="empresa.html" class="font-white enlaces-text-decoration-none">Empresa</a>
+                </ul>
+                <ul>
+                    <a href="contacto.html"class="font-white enlaces-text-decoration-none">Contacto</a>
+                </ul>
+            </div>
         </div>
     </footer>
 

@@ -1,0 +1,85 @@
+.contedor-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.contedor-productos .producto {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 9px 9px 10px rgb(108, 108, 109)    
+}
+
+.container-foot {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (min-width: 426px) {
+    .contedor-productos .producto {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .contedor-productos .producto {
+        width: 30%;
+    }
+}
+
+.producto .element{
+    display: flex;
+    justify-content: center;
+}
+
+.element {
+    text-align: center;
+}
+
+
+.hw-imagen-producto img {
+    width: 50%;
+    height: 200px;    
+}
+
+
+
+.bc-green {
+    background-color: green;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:  10px;
+}
+
+.color-font-white {
+    color: white;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bc-grey {
+    background-color: gray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:  10px;
+}
+
+.nombre-producto {
+    font-size: 30px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.precio-tachado-sin-stock {
+    text-decoration: line-through 2px solid black;
+    color: gray;
+}

@@ -2,80 +2,124 @@
 <html lang="es">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sucursales - Tienda Condor</title>
-    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Tienda Condor</title>
+    <link rel="stylesheet" href="css/styles-global.css">
+    <link rel="stylesheet" href="css/styles-sucursales.css">
+    <link rel="stylesheet" href="css/styles-imgs.css">
 </head>
 <body>
-    <header>
+    <header class="bc-blue">
         <div class="enlaces-header font-white">
-            <div class="envios-cuotas">
-                <p class="texto-envios-cuotas uppercase">Envíos gratis a todo el país</p>
-            </div>
-            <div class="envios-cuotas">
-                <p class="texto-envios-cuotas uppercase">3 cuotas sin interés con con todas las tarjetas</p>
-            </div>
+            <p class="envios-cuotas uppercase">Envíos gratis a todo el país</p>            
+            <p class="envios-cuotas uppercase">3 cuotas sin interés con tarjetas de crédito</p>            
         </div>
     </header>
+
+
     <nav>
         <div class="contendor-nav">
-            <div class="contenedor-img hw-img-home font-size-logo">
-                <a href="index.html" class="enlaces-text-decoration-none"><img src="img/condor2.png" alt="home">Tienda Condor</a>
+            <div class="item-nav contenedor-img hw-img-home font-size-logo">
+                <a href="index.html">
+                    <img src="img/condor2.png" alt="home" alt="Icono de inicio">                
+                </a>
             </div>
-            <div class="enlaces-sucursales uppercase font-size">
+            <div class="item-nav contenedor-img hw-img-home font-size-logo">
+                <a class="enlaces-text-decoration-none" href="index.html">Tienda Condor</a>
+            </div>
+            <div class="item-nav enlaces-sucursales uppercase font-size">
                 <a class="enlaces-text-decoration-none" href="sucursales.html">Sucursales</a>
             </div>
+            <div class="item-nav enlaces-sucursales uppercase font-size">
+                <a class="enlaces-text-decoration-none" href="empresa.html">Empresa</a>
+            </div>
+            <div class="item-nav enlaces-sucursales uppercase font-size">
+                <a class="enlaces-text-decoration-none" href="contacto.html">Contacto</a>
+            </div>
+
         </div>
     </nav>
+    <div>
+        <img src="img/foto4.png" alt="Imagen central de sucursales" class="hw-imagen-central">
+    </div>
     <div class="contenedor-sucursales margin-left margin-right">
-        <div class="box-sucursal margin-left margin-right margin-top">
-            <div class="margin-left">
-                <h1>Sucursal - Buenos Aires</h1>
+        
+        <div class="box-sucursal margin-left margin-right margin-top color-white">
+            
+            <div class="box-dato-sucursal">
+                <div class="margin-left">
+                    <h1>Sucursal - Buenos Aires</h1>
+                </div>
+
+                <div class="datos-sucursal">
+                    <ul>
+                        <li>Dirección: Av. 9 de Julio. CABA</li>
+                        <li>Código Postal: 1043</li>
+                        <li>Teléfono: (011) 4224-4515</li>
+                    </ul>
+                </div>
             </div>
-            <div class="datos-sucursal">
-                <ul>
-                    <li>Dirección: Av. 9 de Julio. Autónoma de Buenos Aires</li>
-                    <li>Código Postal: 1043</li>
-                    <li>Teléfono: (011) 4224-4515</li>
-                </ul>
-            </div>
-            <div class="mapa-sucursal margin-left">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4644.297341638439!2d-58.38794326774701!3d-34.60380384703646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1714860081038!5m2!1ses!2sar"  class="hwb-mapa" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        <div class="box-sucursal margin-left margin-right">
-            <div class="margin-left">
-                <h1>Sucursal - Bariloche</h1>
-            </div>
-            <div class="datos-sucursal">
-                <ul>
-                    <li>Dirección: Av. de los Pioneros 200, San Carlos de Bariloche, Río Negro</li>
-                    <li>Código Postal: 4140</li>
-                    <li>Teléfono: (0294) 442-5423</li>
-                </ul>
-            </div>
-            <div class="mapa-sucursal margin-left">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192339.1991640428!2d-71.50472507794774!3d-41.12797678178361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b1520c860e5%3A0x8210ae97cb7b9a65!2sSan%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1714859585259!5m2!1ses!2sar" class="hwb-mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <div class="item-mp hwb-mapa margin-left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4644.297341638439!2d-58.38794326774701!3d-34.60380384703646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1714860081038!5m2!1ses!2sar" class="hwb-mapa" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-        <div class="box-sucursal margin-left margin-right">
-            <div class="margin-left">
-                <h1>Sucursal - Ushuaia</h1>
+        
+        <div class="box-sucursal margin-left margin-right margin-top color-white">
+            <div class="box-dato-sucursal">
+                <div class="margin-left">
+                    <h1>Sucursal - Bariloche</h1>
+                </div>
+                <div class="datos-sucursal">
+                    <ul>
+                        <li>Dirección: Av. de los Pioneros 200, Bariloche, Río Negro</li>
+                        <li>Código Postal: 4140</li>
+                        <li>Teléfono: (0294) 442-5423</li>
+                    </ul>
+                </div>
             </div>
-            <div class="datos-sucursal">
-                <ul>
-                    <li>Dirección: Gdor. Deloqui 1522, Ushuaia, Tierra del Fuego</li>
-                    <li>Código Postal: 9410</li>
-                    <li>Teléfono: (2901) 61-3580</li>
-                </ul>
+            <div class="item-mp hwb-mapa margin-left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192339.1991640428!2d-71.50472507794774!3d-41.12797678178361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b1520c860e5%3A0x8210ae97cb7b9a65!2sSan%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1714859585259!5m2!1ses!2sar" class="hwb-mapa" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="mapa-sucursal margin-left">                
+        </div>
+
+        <div class="box-sucursal margin-left margin-right margin-top color-white">
+            <div class="box-dato-sucursal">
+                <div class="margin-left">
+                    <h1>Sucursal - Ushuaia</h1>
+                </div>
+                <div class="datos-sucursal">
+                    <ul>
+                        <li>Dirección: Gdor. Deloqui 1522, Ushuaia, Tierra del Fuego</li>
+                        <li>Código Postal: 9410</li>
+                        <li>Teléfono: (2901) 61-3580</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item-mp hwb-mapa margin-left">                
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73583.26043521993!2d-68.38520376228503!3d-54.80673630461562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4c22b5bad109bf%3A0x5498473dba43ebfc!2sUshuaia%2C%20Tierra%20del%20Fuego!5e0!3m2!1ses!2sar!4v1714859614363!5m2!1ses!2sar" class="hwb-mapa" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="inline-block margin-top margin-left font-white">
-            <p>© 2024 Tienda Condor. Todos los derechos reservados.</p>
+    <footer class="bg-blue">
+        <div class="container-foot margin-top margin-left font-white">
+            <div>
+                <p>© 2024 Tienda Condor. Todos los derechos reservados.</p>
+            </div>
+            <div>
+                <ul>
+                    <h3>Links de interes</h3>
+                </ul>
+                <ul>
+                    <a href="sucursales.html" class="font-white enlaces-text-decoration-none">Sucursales</a>
+                </ul>
+                <ul>
+                    <a href="empresa.html" class="font-white enlaces-text-decoration-none">Empresa</a>
+                </ul>
+                <ul>
+                    <a href="contacto.html"class="font-white enlaces-text-decoration-none">Contacto</a>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

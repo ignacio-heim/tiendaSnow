@@ -1,17 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Tienda Condor</title>
+    <link rel="stylesheet" href="css/styles-global.css">
+    <link rel="stylesheet" href="css/styles-pago.css">
 </head>
 <body>
-    <div>
-        <form action="">
-            <label for="">Nombre y Apellido</label>
-            <input type="text">
-            <label for="">Direccion</label>
-        </form>
-    </div>
+    <header class="bc-blue">
+        <div class="enlaces-header font-white">
+            <p class="envios-cuotas uppercase">Envíos gratis a todo el país</p>            
+            <p class="envios-cuotas uppercase">3 cuotas sin interés con tarjetas de crédito</p>            
+        </div>
+    </header>
+
+
+    <nav>
+        <div class="contendor-nav">
+            <div class="item-nav contenedor-img hw-img-home font-size-logo">
+                <a href="index.html">
+                    <img src="img/condor2.png" alt="home" alt="Icono de inicio">                
+                </a>
+            </div>
+            <div class="item-nav contenedor-img hw-img-home font-size-logo">
+                <a class="enlaces-text-decoration-none" href="index.html">Tienda Condor</a>
+            </div>
+            <div class="item-nav enlaces-sucursales uppercase font-size">
+                <a class="enlaces-text-decoration-none" href="sucursales.html">Sucursales</a>
+            </div>
+            <div class="item-nav enlaces-sucursales uppercase font-size">
+                <a class="enlaces-text-decoration-none" href="empresa.html">Empresa</a>
+            </div>
+            <div class="item-nav enlaces-sucursales uppercase font-size">
+                <a class="enlaces-text-decoration-none" href="contacto.html">Contacto</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <form action="" class="contendor-form margin">
+        <div class="container-row">
+            <div class="width-row">
+                <div class="container-datos-column">
+                    <fieldset class="seccion-pago seccion-max-width border">
+                        <legend class="font-decoration">1 - Datos Personales</legend>
+                            <div>
+                                <div>
+                                    <label for="name" class="item-form font-bold-size">Nombre*</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="name" name="name" class="item-form" required autofocus placeholder="Ingresa tu nombre">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="surname" class="item-form font-bold-size">Apellido*</label>
+                                </div>
+                                
+                                <div>
+                                    <input type="text" id="surname" name="surname" class="item-form" required  placeholder="Ingresa tu apeliido">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="dni" class="item-form font-bold-size">DNI*<span class="text-small">(sin puntos ni espacios)</span></label>
+                                </div>
+                                <div>
+                                    <input type="number" id="dni" name="dni" class="item-form" required  placeholder="Ingresa tu DNI">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="email" class="item-form font-bold-size">Email*</label>
+                                </div>
+                                <div>
+                                    <input type="email" id="email" name="email" class="item-form" required placeholder="Ingresa tu email">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="tel" class="item-form font-bold-size">Teléfono</label>
+                                </div>
+                                <div>
+                                    <input type="tel" id="tel" name="tel" class="item-form" placeholder="Ingresa tu teléfono">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for=""class="item-form font-bold-size">Género*</label>
+                                </div>
+                                <div class="item-form">
+                                    <label for="F">Femenino</label>
+                                    <input type="radio" name="grupo-genero" value="F" id="F" required>
+                                    <label for="M">Masculino</label>
+                                    <input type="radio" name="grupo-genero" value="M" id="M" required>
+                                    <label for="X">X</label>
+                                    <input type="radio" name="grupo-genero" value="X" id="X" required>
+                                </div>
+                         </div>
+                  </fieldset>
+                
+                  <fieldset class="seccion-pago seccion-max-width border">
+                    <legend class="font-decoration">2 - Entrega</legend>
+                        <div>                            
+                            <div>
+                                <label for="codp"class="item-form font-bold-size">Código postal*</label>
+                            </div>
+                            <div>
+                                <input type="number" name="" id="codp" name="codp" class="item-form" required placeholder="Ingresa tu código postal">
+                            </div>
+                            <div>
+                                <label for="calle"class="item-form font-bold-size">Calle*</label>
+                            </div>
+                            <div>
+                                <input type="text" name="calle" id="calle" class="item-form" required placeholder="Ingresa tu nombre de calle">
+                            </div>
+                            <div>
+                                <label for="numberdir" class="item-form font-bold-size">Numero*</label>
+                            </div>
+                            <div>
+                                <input type="text" name="numberdir" id="numberdir" class="item-form" required placeholder="Ingresa tu número de calle">
+                            </div>
+                            <div>
+                                <label for="piso"class="item-form font-bold-size">Piso/Departamento</label>
+                            </div>
+                            <div>
+                                <input type="text" name="piso" id="piso" class="item-form" placeholder="Ingresa tu piso">
+                            </div>
+                            <div>
+                                <label for="barrio"class="item-form font-bold-size">Barrio</label>
+                            </div>
+                            <div>
+                                <input type="text" name="barrio" id="barrio" class="item-form" placeholder="Ingresa tu barrio">
+                            </div>
+                            <div>
+                                <label for="delivery"class="item-form font-bold-size">¿Quién recibe el pedido?</label>
+                            </div>
+                            <div>
+                                <input type="text" name="delivery" id="delivery" class="item-form"placeholder="Ingresa el nombre de la persona que recibe el producto">
+                            </div>               
+                        </div>
+                    </fieldset>
+
+                </div>
+                <fieldset class="seccion-pago seccion-max-width border">
+                <legend class="font-decoration">3 - Pago</legend>
+                <div>
+                    <div>
+                        <label for="" class="item-form font-bold-size">Método de pago*</label>
+                    </div>
+                    <div class="item-form">
+                        <label for="C">Crédito</label>
+                        <input type="radio" name="grupo-pago" value="C" id="C" required>
+                        <label for="D">Débito</label>
+                        <input type="radio" name="grupo-pago" value="D" id="D" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="numero-tarjeta"class="item-form font-bold-size">Número*</label>
+                </div>
+                <div>
+                    <input type="number" name="numero-tarjeta" id="numero-tarjeta" class="item-form" required placeholder="Ingresa el número de tu tarjeta">
+                </div>  
+                <div>
+                    <label for="name-tarjeta" class="item-form font-bold-size">Nombre y Apellido de la tarjeta*</label>
+                </div>
+                <div>
+                    <input type="text" name="name-tarjeta" id="name-tarjeta" class="item-form" required placeholder="Ingresa el nombre y apellido de tu tarjeta">
+                </div>  
+                <div>
+                    <label for="fecha-ven" class="item-form font-bold-size">Fecha de Vencimiento*</label>
+                </div>
+                    <div class="item-form">
+                        <select name="mes" id="fecha-ven" required>
+                            <option value="" selected disabled>MM</option>
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="4">05</option>
+                            <option value="4">06</option>
+                            <option value="4">07</option>
+                            <option value="4">08</option>
+                            <option value="4">09</option>
+                            <option value="4">10</option>
+                            <option value="4">11</option>
+                            <option value="4">12</option>
+                        </select> 
+                        <select name="año" required >
+                            <option value="" selected disabled>AA</option>
+                            <option value="1">24</option>
+                            <option value="2">25</option>
+                            <option value="3">26</option>
+                            <option value="4">27</option>
+                            <option value="4">28</option>
+                            <option value="4">29</option>
+                            <option value="4">30</option>
+                            <option value="4">31</option>
+                            <option value="4">32</option>
+                            <option value="4">33</option>
+                            <option value="4">34</option>
+                            <option value="4">35</option>
+                        </select> 
+                    </div>
+                <div>
+                    <label for="cod-seg"class="item-form font-bold-size">Código de Seguridad*</label>
+                </div>
+                <div>
+                    <input type="number" name="cod-seg" id="cod-seg" class="item-form" required placeholder="Ingresa el codigo de tu tarjeta">
+                </div> 
+                <div>
+                    <label for="dni-pagador" class="item-form font-bold-size">DNI del pagador*</label>
+                </div>
+                <div>
+                    <input type="number" name="dni-pagador" id="dni-pagador" class="item-form" required placeholder="Ingresa el DNI del titular de la tarjeta">
+                </div> 
+                </fieldset>
+                <div>
+                    <label class="item-form">* Campos obligatorios</label>
+                </div>
+            </div>
+            <div class="width-row">
+                <fieldset class="seccion-pago pago-box-right position-sticky border">
+                    <legend class="font-decoration">4 - Confirmar compra</legend>
+                    <div>
+                        <h1>Tabla Snowboard Nitro Team Rental True</h1>
+                    </div>
+                    <div >
+                        <img src="img/producto1.png" class="hw-imagen-producto">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="" checked>
+                        <label for="">Quiero recibir Ticket de Cambio</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="" checked>
+                        <label for="">Quiero recibir el newsletter con promociones.</label>
+                    </div>
+                
+                    <input type="submit" value="Confirmar compra" class="button-enviar">
+                
+                </fieldset>
+            </div>
+        </div>        
+    </form> 
+    
+    <footer class="bg-blue">
+        <div class="container-foot margin-top margin-left font-white">
+            <div>
+                <p>© 2024 Tienda Condor. Todos los derechos reservados.</p>
+            </div>
+            <div>
+                <ul>
+                    <h3>Links de interes</h3>
+                </ul>
+                <ul>
+                    <a href="sucursales.html" class="font-white enlaces-text-decoration-none">Sucursales</a>
+                </ul>
+                <ul>
+                    <a href="empresa.html" class="font-white enlaces-text-decoration-none">Empresa</a>
+                </ul>
+                <ul>
+                    <a href="contacto.html"class="font-white enlaces-text-decoration-none">Contacto</a>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
